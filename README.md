@@ -70,5 +70,3 @@ python src/evaluate.py --model_path models/best_model.pth --data_path data/imdb_
 - Pandas
 - scikit-learn
 
-## License
-MIT
