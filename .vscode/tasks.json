@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Install Python dependencies",
+			"command": "pip install -r requirements.txt",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"type": "shell",
+			"label": "Train Model",
+			"command": "python src/train.py --data_path data/your_dataset.csv --glove_path glove/glove.6B.100d.txt",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"type": "shell",
+			"label": "Evaluate Model",
+			"command": "python src/evaluate.py --model_path models/best_model.pth --data_path data/your_test_data.csv",
+			"group": "test",
+			"problemMatcher": []
+		}
+	]
+}
